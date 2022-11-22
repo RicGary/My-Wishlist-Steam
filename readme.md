@@ -15,7 +15,7 @@
     <b>How it works?</b>
 </h2>
 
-It's basically web scraping on the url of your steam wishlist. With that in mind, the code will only run if your account is set to public.
+It's basically web scraping on the url of your steam wishlist. With that in mind, the code will only run if your account is set to public. I used Scrapy for the web scraping (new version), ReGeX/Pandas for data cleaning(new version) and Dash for HTML wireframe.
 
 <p align="center" >
     <img src="assets/images/Sample.png">
