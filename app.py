@@ -8,8 +8,8 @@ import requests
 import json
 
 
-server = Flask(__name__)
-app = Dash(server=server)
+app = Dash(__name__)
+server = app.server
 
 
 def pricingRight(price):
@@ -115,6 +115,6 @@ app.layout = html.Div(className='mainDiv',
                           ])
 
 if __name__ == '__main__':
-    webbrowser.open('http://127.0.0.1:8050', new=0)
+    # webbrowser.open('http://127.0.0.1:8050', new=0)
     # app.run_server(host="0.0.0.0", port=8080, debug=True)
     app.run()
