@@ -8,8 +8,8 @@ import requests
 import json
 
 
-app = Dash(__name__)
-server = app.server
+server = Flask(__name__)
+app = Dash(server=server)
 
 
 def pricingRight(price):
