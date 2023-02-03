@@ -8,7 +8,7 @@ import requests
 import json
 
 
-app = Dash(__name__)
+app = Dash(__name__, title='MyWishlist')
 server = app.server
 
 def pricingRight(price):
@@ -85,12 +85,19 @@ def programInit(userID):
                                  html.H3('Example:', className='example_id'),
                                  html.H3(['https://steamcommunity.com/profiles/',
                                           html.Span('123456789', className='span_ex'), '/'],
-                                         className='url_ex'), html.H3('or', className='url_ex'),
+                                          className='url_ex'), html.H3('or', className='url_ex'),
                                  html.H3(['https://steamcommunity.com/id/', html.Span('yourName', className='span_ex'),
                                           '/'],
-                                         className='url_ex'),
-                                 html.H3('3° - Paste in the superior box.', id='final_instruction')
-                                 ], className='divInstructions')
+                                          className='url_ex'),
+                                 html.H3('3° - Paste in the superior box.', id='final_instruction'),
+                                 html.Br(),
+                                 html.Br(),
+                                 html.H2('Source Code at', className='instructionTitle'),
+                                 html.H3(['https://github.com/RicGary/',
+                                          html.Span('My-Wishlist-Steam', className='span_ex')],
+                                          className='url_ex')
+                                 ], className='divInstructions'),
+                                 
 
         return instructions
 

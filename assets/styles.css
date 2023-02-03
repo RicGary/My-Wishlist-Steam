@@ -78,16 +78,6 @@ body {
   transition: 0.5s
 }
 
-.wishlistTitle:hover {
-  text-shadow: 0 0 5px #66c0f4;
-  transform: scale(1.05);
-}
-
-.steamTitle:hover {
-  text-shadow: 0 0 5px #66c0f4;
-  transform: scale(1.05);
-}
-
 .steamLogo:hover{
   transform: scale(1.05);
 }
