@@ -1,0 +1,25 @@
+:root{
+    --box-size-width: 3vw;
+    --box-size-height: 7%;
+}
+
+.currency_box{
+    height: var(--box-size-height);
+    width: var(--box-size-width);
+    min-width: 70px;
+
+    position: absolute;
+    right: 27.5vw;
+    top: 5vh;
+}
+
+#check_your_currency, .Select-value, .Select-menu-outer, .Select-control {
+    background-color: #1b2838 !important;
+    color: #c7d5e0 !important;
+    box-shadow: 0px 0px 3px 0px #66c0f4 !important;
+    border: none;
+}
+
+.Select-value-label{
+    color: #c7d5e0 !important;
+}
