@@ -117,6 +117,7 @@ app.layout = html.Div(className='mainDiv',
                                            html.Div(className='aboutMeDiv', children=[
                                                html.A('CONTACT ME', className='link', href='https://ericnaiber.com',
                                                       target='_blank')]),
+                                       currency_bar(1),
                                        ], ),
                               html.Div(id='graph-output', className='outputContent'),
                           ])
