@@ -1,12 +1,14 @@
-from dash import Dash, html, dcc, Input, Output
 from plots.graph import plotly_graph
-from lxml import html as html_lxlml
-from flask import Flask
-import pandas as pd
+from src.interactibles import currency_bar
+
 import webbrowser
 import requests
 import json
 
+import pandas as pd
+from dash import Dash, html, dcc, Input, Output
+from lxml import html as html_lxlml
+from flask import Flask
 
 app = Dash(__name__, title='MyWishlist')
 server = app.server
@@ -18,8 +20,7 @@ def pricingRight(price):
     return float(start + '.' + end)
 
 
-# 76561198113335827
-# callback vai aqui
+# callback goes here
 @app.callback(
     Output(component_id='graph-output', component_property='children'),
     Input(component_id='userSteamID', component_property='value')
@@ -121,6 +122,4 @@ app.layout = html.Div(className='mainDiv',
                           ])
 
 if __name__ == '__main__':
-    # webbrowser.open('http://127.0.0.1:8050', new=0)
-    # app.run_server(host="0.0.0.0", port=8080, debug=True)
     app.run()
